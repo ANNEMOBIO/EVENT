@@ -11,7 +11,6 @@ const EventList = ({ events, deleteEvent, editEvent }) => {
         {events.map((event, index) => (
           <li key={index}>
             <Link to={`/event/${index}`}>{event.title}</Link>
-            <i className="fas fa-edit edit-icon" onClick={() => editEvent(index)}></i>
             <i className="fas fa-trash-alt delete-icon" onClick={() => deleteEvent(index)}></i>
           </li>
         ))}

@@ -34,11 +34,11 @@ const App = () => {
       <Routes>
         <Route
           path="/"
-          element={<EventList events={events} deleteEvent={deleteEvent} editEvent={editEvent} />}
+          element={<EventList events={events} deleteEvent={deleteEvent}  />}
         />
         <Route
           path="/add-event"
-          element={<AddEventForm addEvent={addEvent} editingEvent={editingEvent} />}
+          element={<AddEventForm addEvent={addEvent}  />}
         />
         <Route path="/event/:eventId" element={<EventDetail events={events} />} />
       </Routes>
